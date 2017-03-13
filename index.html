@@ -3,77 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <title>Etsy</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
-  <div id="headerContainer">
-    <header class="headerContain">
-      <div class="header1">
-        <h1>Etsy</h1>
-        <input type="text" name="search" placeholder="Search for items or shops" class="headerSearch" />
-        <button class="searchBtn">Search</button>
-      </div>
-      <div class="header2">
-        <ul id="headerList">
-          <li><a href="#" class="headerList">Sell on Etsy</a></li>
-          <li><a href="#" class="headerList">Register</a></li>
-          <li><button class="signIn">Sign In</button></li>
-        </ul>
-        <ul id="myCart">
-          <li><img src="images/cart.png"></li>
-          <li><a href="#">Cart</a></li>
-        </ul>
-      </div>
-    </header>
-    <nav>
-      <ul id="nav">
-        <li><a href="#">Clothing & Accessories</a></li>
-        <li><a href="#">Jewelry</a></li>
-        <li><a href="#">Craft Supplies & Tools</a></li>
-        <li><a href="#">Weddings</a></li>
-        <li><a href="#">Entertainment</a></li>
-        <li><a href="#">Home & Living</a></li>
-        <li><a href="#">Kids & Baby</a></li>
-        <li><a href="#">Vintage</a></li>
+  <header>
+    <div class="headerBar">
+      <h2>Etsy</h2>
+      <input type="text" name="search" placeholder="Search for items or shops" class="searchBar" />
+      <input type="button" name="search" value="Search"class="submitBtn">
+      <ul class="menu">
+        <li><a href="#">Sell on Etsy</a></li>
+        <li><a href="#">Register</a></li>
+        <li><input type="button" name="signin" value="Sign in" class="signIn"></li>
+        <li><i class="fa fa-shopping-cart" aria-hidden="true"></i><br /><span class="cart">Cart</span></li>
       </ul>
-    </nav>
-  </div>
-  <div id="mainContainer">
-    <div id="subContainer">
-      <div class="results">
-        <h3>Show results for: </h3>
-        <div class="resultList">
-          <p>All Categories</p>
-          <ul>
-            <li><a href="#">Home & Living</a></li>
-            <li><a href="#">Art & Collectibles</a></li>
-            <li><a href="#">Wedding</a></li>
-            <li><a href="#">Clothing</a></li>
-            <li><a href="#">Paper & Party Supplies</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Jewelry</a></li>
-            <li><a href="#">Craft & Supplies</a></li>
-            <li><a href="#">Bags & Purses</a></li>
-            <li><a href="#">Bath & Beauty</a></li>
-            <li><a href="#">Shoes</a></li>
-            <li><a href="#">Books, Movies, & Music</a></li>
-            <li><a href="#">Electronics and Accessories</a></li>
-            <li><a href="#">Toys & Games</a></li>
-            <li><a href="#">Pet Supplies</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Refine your search</h3>
-        </div>
-      </div>
+    </div>
+  </header>
+  <nav>
+    <ul class="navBar">
+      <li><a href="#">Clothing & Accessories</a></li>
+      <li><a href="#">Jewelry</a></li>
+      <li><a href="#">Craft Supplies & Tools</a></li>
+      <li><a href="#">Weddings</a></li>
+      <li><a href="#">Entertainment</a></li>
+      <li><a href="#">Home & Living</a></li>
+      <li><a href="#">Kids & Baby</a></li>
+      <li><a href="#">Vintage</a></li>
+    </ul>
+  </nav>
+  <div class="sideDiv">
+    <h4>Show results for</h4>
+    <div>
+      <span>All Categories</span>
+      <ul>
+        <li>Home & Living</li>
+        <li>Art & Collectibles</li>
+        <li>Weddings</li>
+        <li>Clothing</li>
+        <li>Paper & Party Supplies</li>
+        <li>Jewelry</li>
+        <li>Accessories</li>
+        <li>Craft Supplies & Tools</li>
+        <li>Bags & Purses</li>
+        <li>Bath & Beauty</li>
+        <li>Books, Movies & Music</li>
+        <li>Shoes</li>
+        <li>Electronics & Accessories</li>
+        <li>Toys & Games</li>
+        <li>Pet Supplies</li>
+      </ul>
+    </div>
+    <div class="sideDiv">
+      <h4>Refine your search</h4>
+      <span>Shop location</span><br />
+      <input type="radio" name="anywhere" value="anywhere" checked="checked"> Anywhere <br />
+      <input type="radio" name="anywhere" value="usa"> United States <br />
+      <span>Choose a custom location</span><br />
+      <span>Item type</span><br />
+      <input type="radio" name="items" value="allItems" checked="checked"> All Items <br />
+      <input type="radio" name="items" value="handmade"> Handmade <br />
+      <input type="radio" name="items" value="vintage"> Vintage <br />
+      <hr>
     </div>
   </div>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript" src="js/items.js"></script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

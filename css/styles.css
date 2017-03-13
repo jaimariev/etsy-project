@@ -1,218 +1,121 @@
-body {
-  min-width: 600px;
-  max-width: 100%;
-  min-height: 600px;
-  max-height: 100%;
-  margin: auto;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-}
 
-ul {
-  list-style: none;
+body {
+  font-family: sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: #27A2C0;
+  color: gray;
 }
 
-a:hover {
-  text-decoration: underline;
+li {
+  list-style: none;
 }
 
-#headerContainer {
-  width: 100%;
-  height: 100%;
-}
-
-.headerContain {
-  width: 100%;
-  height: 75px;
-}
-
-.header1 {
+.headerBar {
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  float: left;
-  margin-left: 35px;
+  width: 95%;
+  height: 100px;
+  margin: auto;
 }
 
-.header2 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-  margin-right: 35px;
-}
-
-.header1 h1 {
-  font-family: Serif;
-  font-weight: normal;
-  color: #F56400;
+h2 {
+  margin-right: 10px;
   font-size: 40px;
   margin: 0;
-  position: relative;
-  top: 15px;
+  margin-top: 15px;
+  margin-right: 30px;
+  color: #F56400;
+  font-family: serif;
 }
 
-.headerSearch {
-  width: 320px;
-  height: 13px;
-  border: 1px solid #A9A9A9;
-  border-radius: 3px;
-  font-size: 13px;
+.searchBar {
+  width: 360px;
+  height: 15px;
+  margin-top: 20px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: 1px solid gray;
   padding: 10px;
-  color: gray;
-  background: #FBFBFA;
-  position: relative;
-  top: 8px;
-  left: 25px;
+  font-size: 15px;
   outline: none;
-  box-shadow: inset 0 0 5px #F4F4F2;
 }
 
-.searchBtn {
-  width: 80px;
-  height: 35px;
-  border: 1px solid #308EA3;
+.submitBtn {
+  width: 100px;
+  height: 37px;
+  margin-top: 20px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  font-size: 13px;
-  font-weight: bold;
-  background: #3DACC6;
-  color: white;
-  cursor: pointer;
-  position: relative;
-  top: 7px;
-  left: 20px;
+  border: none;
+  background: #3CB1CB;
+  color:white;
+  font-size: 15px;
   outline: none;
 }
 
-#headerList {
-  height: 50px;
-  border-right: 1px solid lightgrey;
-  line-height: 35px;
+.menu {
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  position: relative;
+  left: 390px;
+  margin-top: 25px;
+  margin-right: 20px;
+  padding: 0;
 }
 
-#headerList li { 
-  font-size: 14px;
-  float: left;
-  margin: 10px;
+.menu a {
+  margin-right: 20px;
+  color: #0192B5;
+  font-size: 15px;
 }
 
 .signIn {
-  width: 70px;
-  height: 35px;
-  border: 1px solid #408EA3;
-  background: white;
-  border-radius: 3px;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  color: #27A2C0;
-  line-height: 10px;
-}
-
-.signIn:hover {
-  background-color: #F0FBFD;
-}
-
-#myCart {
-  padding: 0;
-  margin: 10px;
-  position: relative;
-  bottom: 20px;
-  font-size: 11px;
-}
-
-#myCart a {
-  color: grey;
-}
-
-#myCart img {
-  width: 20px;
-  height: 20px;
-}
-
-#nav {
-  width: 100%;
-  height: 48px;
-  border-top: 1px solid lightgrey;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 48px;
-}
-
-#nav li {
-  float: left;
-  position: relative;
+  width: 60px;
+  height: 30px;
   margin-right: 20px;
-  left: 35px;
-
+  border: 1px solid #0192B5;
+  outline: none;
+  border-radius: 3px;
+  background: white;
+  color: #0192B5;
+  font-size: 15px;
 }
 
-#nav a {
-  color: grey;
+.fa-shopping-cart {
+  color: gray;
+  font-size: 20px;
 }
 
-#nav a:hover {
-  text-decoration: none;
-  padding-bottom: 13px;
+.cart {
+  color: gray;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+nav {
+  height: 50px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 25px;
+}
+
+.navBar {
+  display: flex;
+}
+
+.navBar li {
+  text-align: center;
+  position: relative;
+  font-size: 15px;
+  margin-right: 25px;
+}
+
+.navBar a:hover {
+  padding-bottom: 15px;
   border-bottom: 3px solid #F56400;
   color: black;
-}
-
-#mainContainer {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  background-color: #F5F5F1;
-  border-top: 1px solid lightgrey;
-  box-shadow: inset 0 0 4px lightgrey;
-}
-
-#subContainer {
-  width: 95%;
-  margin: auto;
-  padding-top: 20px;
-}
-
-.results {
-  width: 20%;
-  font-family: Tahoma;
-}
-
-.results h3 {
-  font-family: verdana;
-  font-size: 12px;
-  color: #444444;
-}
-
-.resultList {
-  border: 1px solid lightgrey;
-  background: white;
-  border-radius: 3px;
-  font-weight: normal;
-}
-
-.results p {
-  font-size: 12px;
-  color: #444444;
-  margin: 15px;
-  font-weight: normal;
-}
-
-.resultList ul {
-  padding: 0;
-  position: relative;
-  left: 20px;
-}
-
-.resultList li {
-  font-size: 12px;
-  margin: 10px;
 }
 
 
