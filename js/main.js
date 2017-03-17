@@ -52,11 +52,3 @@ $(document).ready(function(){
     })
 
 })
-
-var content = “<ul>”  
-var eight = items.filter(function(val){
-    if (val.materials.length >= 8){
-      return val
-
-    }
-})
