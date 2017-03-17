@@ -17,7 +17,7 @@
         <li><a href="#">Sell on Etsy</a></li>
         <li><a href="#">Register</a></li>
         <li><input type="button" name="signin" value="Sign in" class="signIn"></li>
-        <li><i class="fa fa-shopping-cart" aria-hidden="true"></i><br /><span class="cart">Cart</span></li>
+        <li class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><br /><span class="word">Cart</span></li>
       </ul>
     </div>
   </header>
@@ -33,42 +33,111 @@
       <li><a href="#">Vintage</a></li>
     </ul>
   </nav>
-  <div class="sideDiv">
-    <h4>Show results for</h4>
-    <div>
-      <span>All Categories</span>
-      <ul>
-        <li>Home & Living</li>
-        <li>Art & Collectibles</li>
-        <li>Weddings</li>
-        <li>Clothing</li>
-        <li>Paper & Party Supplies</li>
-        <li>Jewelry</li>
-        <li>Accessories</li>
-        <li>Craft Supplies & Tools</li>
-        <li>Bags & Purses</li>
-        <li>Bath & Beauty</li>
-        <li>Books, Movies & Music</li>
-        <li>Shoes</li>
-        <li>Electronics & Accessories</li>
-        <li>Toys & Games</li>
-        <li>Pet Supplies</li>
-      </ul>
+  <div class="mainContainer">
+    <div class="sideContainer">
+      <h4>Show results for</h4>
+      <div>
+        <span>All Categories</span>
+        <ul>
+          <li>Home & Living</li>
+          <li>Art & Collectibles</li>
+          <li>Weddings</li>
+          <li>Clothing</li>
+          <li>Paper & Party Supplies</li>
+          <li>Jewelry</li>
+          <li>Accessories</li>
+          <li>Craft Supplies & Tools</li>
+          <li>Bags & Purses</li>
+          <li>Bath & Beauty</li>
+          <li>Books, Movies & Music</li>
+          <li>Shoes</li>
+          <li>Electronics & Accessories</li>
+          <li>Toys & Games</li>
+          <li>Pet Supplies</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Refine your search</h4>
+        <span>Shop location</span>
+        <ul>
+          <li><input type="radio" name="anywhere" value="anywhere" checked="checked"> Anywhere</li>
+          <li><input type="radio" name="anywhere" value="usa"> United States</li>
+        </ul>
+        <span>Choose a custom location</span>
+        <hr>
+        <span>Item type</span>
+        <ul>
+          <li><input type="radio" name="items" checked="checked" /> All Items </li>
+          <li><input type="radio" name="items" /> Handmade </li>
+          <li><input type="radio" name="items" />Vintage </li>
+        </ul>
+        <hr>
+        <span>Price ($)</span>
+        <ul>
+          <li><input type="radio" name="price" checked="checked" />Any Price</li>
+          <li><input type="radio" name="price" />Under $25</li>
+          <li><input type="radio" name="price" />$25 to $50</li>
+          <li><input type="radio" name="price" />$50 to $100</li>
+          <li><input type="radio" name="price" />Over $100</li>
+          <li><input type="radio" name="price" />Custom</li>
+        </ul>
+        <input type="text" name="low" placeholder="Low">
+        <span>to</span>
+        <input type="text" name="high" placeholder="High"><i class="fa fa-caret-right" aria-hidden="true"></i>
+        <hr>
+        <span class="all">Filter by Color</span>
+        <ul class="colorbox">
+          <li><button class="red"></button></li>
+          <li><button class="orange"></button></li>
+          <li><button class="yellow"></button></li>
+          <li><button class="green"></button></li>
+          <li><button class="blue"></button></li>
+          <li><button class="purple"></button></li>
+          <li><button class="black"></button></li>
+          <li><button class="white"></button></li>
+        </ul>
+        <hr>
+        <span>Ordering options</span>
+        <ul>
+          <li><input type="checkbox" name="giftCards"><a href="#">Accepts Etsy gift cards</a></li>
+          <li><input type="checkbox" name="giftCards"><a href="#">Customizable</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="sideDiv">
-      <h4>Refine your search</h4>
-      <span>Shop location</span>
-      <ul>
-        <li><input type="radio" name="anywhere" value="anywhere" checked="checked"> Anywhere</li>
-        <li><input type="radio" name="anywhere" value="usa"> United States</li>
-      </ul>
-      <span>Choose a custom location</span>
+    <div class="imageDiv">
+      <h3>Top Categories for Whiskey</h3>
+      <div class="imageOneSet">
+        <ul>
+          <li>
+            <img src="https://img0.etsystatic.com/178/0/14272093/il_340x270.1151854314_tdn0.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+          </li>
+          <li>
+            <img src="https://img0.etsystatic.com/120/0/11169772/il_340x270.1062591158_qru8.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+          </li>
+          <li>
+            <img src="https://img0.etsystatic.com/105/1/12966850/il_340x270.968645768_no6n.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+          </li>
+        <ul>
+      </div>
+      <div class="imageTwoSet">
+        <ul>
+          <li>
+            <img src="https://img1.etsystatic.com/138/0/11063629/il_340x270.1017615195_fx5s.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+          </li>
+          <li>
+            <img src="https://img0.etsystatic.com/113/1/7104490/il_340x270.1019357464_tl4r.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+          </li>
+          <li>
+            <img src="https://img1.etsystatic.com/046/2/9033961/il_340x270.665031811_9fwr.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+          </li>
+          <li>
+            <img src="https://img1.etsystatic.com/135/0/8942013/il_340x270.1074593829_s6ak.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+          </li>
+        <ul>
+      </div>
       <hr>
-      <span>Item type</span>
-      <input type="radio" name="items" value="allItems" checked="checked"> All Items 
-      <input type="radio" name="items" value="handmade"> Handmade 
-      <input type="radio" name="items" value="vintage"> Vintage 
-      <hr>
+      <h4>All Categories > "whiskey" (39,871 Results)</h4>
+      <div class="dataImages"></div>
     </div>
   </div>
 
@@ -77,6 +146,7 @@
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/items.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

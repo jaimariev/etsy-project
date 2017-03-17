@@ -59,9 +59,8 @@ h2 {
   line-height: 30px;
   display: flex;
   position: relative;
-  left: 390px;
+  left: 470px;
   margin-top: 25px;
-  margin-right: 20px;
   padding: 0;
 }
 
@@ -74,6 +73,7 @@ h2 {
 .signIn {
   width: 60px;
   height: 30px;
+  line-height: 10px;
   margin-right: 20px;
   border: 1px solid #0192B5;
   outline: none;
@@ -83,15 +83,26 @@ h2 {
   font-size: 15px;
 }
 
+.signIn:hover {
+  background: #0192B5;
+}
+
 .fa-shopping-cart {
   color: gray;
   font-size: 20px;
+  padding-left: 15px;
 }
 
 .cart {
   color: gray;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 13px;
+  border-left: 1px solid #ccc
+}
+
+.word {
+  position: relative;
+  left: 15px;
+  bottom: 10px;
 }
 
 nav {
@@ -119,3 +130,71 @@ nav {
 }
 
 
+.mainContainer {
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.sideContainer {
+  width: 20%;
+}
+
+.imageDiv {
+  width: 80%;
+}
+
+.imageOneSet ul{
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imageOneSet img {
+  width: 350px;
+  height: 260px;
+  border-radius: 5px;
+}
+
+.imageOneSet p{
+  position: absolute;
+
+}
+
+.imageTwoSet ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.imageTwoSet img {
+  width: 250px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.dataImages {
+  width: 97%;
+}
+
+.images {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.images li {
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.images img {
+  width: 258px;
+  height: 220px;
+}
+
+.images p {
+  font-size: 10px;
+}
