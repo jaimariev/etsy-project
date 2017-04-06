@@ -35,73 +35,104 @@
   </nav>
   <div class="mainContainer">
     <div class="sideContainer">
-      <h4>Show results for</h4>
-      <div>
-        <span>All Categories</span>
-        <ul>
-          <li>Home & Living</li>
-          <li>Art & Collectibles</li>
-          <li>Weddings</li>
-          <li>Clothing</li>
-          <li>Paper & Party Supplies</li>
-          <li>Jewelry</li>
-          <li>Accessories</li>
-          <li>Craft Supplies & Tools</li>
-          <li>Bags & Purses</li>
-          <li>Bath & Beauty</li>
-          <li>Books, Movies & Music</li>
-          <li>Shoes</li>
-          <li>Electronics & Accessories</li>
-          <li>Toys & Games</li>
-          <li>Pet Supplies</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Refine your search</h4>
-        <span>Shop location</span>
-        <ul>
-          <li><input type="radio" name="anywhere" value="anywhere" checked="checked"> Anywhere</li>
-          <li><input type="radio" name="anywhere" value="usa"> United States</li>
-        </ul>
-        <span>Choose a custom location</span>
+      <div class="sideDiv">
+        <div>
+          <span>All Categories</span>
+          <ul>
+            <li><a href="#">Home & Living</a></li>
+            <li><a href="#">Art & Collectibles</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Paper & Party Supplies</a></li>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Craft Supplies & Tools</a></li>
+            <li><a href="#">Bags & Purses</a></li>
+            <li><a href="#">Bath & Beauty</a></li>
+            <li><a href="#">Books, Movies & Music</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Electronics & Accessories</a></li>
+            <li><a href="#">Toys & Games</a></li>
+            <li><a href="#">Pet Supplies</a></li>
+          </ul>
+        </div>
         <hr>
-        <span>Item type</span>
-        <ul>
-          <li><input type="radio" name="items" checked="checked" /> All Items </li>
-          <li><input type="radio" name="items" /> Handmade </li>
-          <li><input type="radio" name="items" />Vintage </li>
-        </ul>
+        <div>
+          <span>Shop location</span>
+          <ul>
+            <li><input type="radio" name="anywhere" value="anywhere" checked="checked" id="anywhere"><label for="anywhere"><a href="#">Anywhere</a></label></li>
+            <li><input type="radio" name="anywhere" value="usa" id="usa"><label for="usa"><a href="#">United States</a></label></li>
+            <li><input type="radio" name="anywhere" value="custom" id="custom"><label for="custom"><a href="#">Custom</a></label></li>
+            <li><input type="text" name="location" placeholder="Enter Location" class="custom"><i class="fa fa-caret-right" aria-hidden="true"></i></li>
+          </ul>
+        </div>
         <hr>
-        <span>Price ($)</span>
-        <ul>
-          <li><input type="radio" name="price" checked="checked" />Any Price</li>
-          <li><input type="radio" name="price" />Under $25</li>
-          <li><input type="radio" name="price" />$25 to $50</li>
-          <li><input type="radio" name="price" />$50 to $100</li>
-          <li><input type="radio" name="price" />Over $100</li>
-          <li><input type="radio" name="price" />Custom</li>
-        </ul>
-        <input type="text" name="low" placeholder="Low">
-        <span>to</span>
-        <input type="text" name="high" placeholder="High"><i class="fa fa-caret-right" aria-hidden="true"></i>
+        <div>
+          <span>Item type</span>
+          <ul>
+            <li><input type="radio" name="items" checked="checked" /><a href="#">All Items</a></li>
+            <li><input type="radio" name="items" /><a href="#">Handmade</a></li>
+            <li><input type="radio" name="items" /><a href="#">Vintage</a></li>
+          </ul>
+        </div>
         <hr>
-        <span class="all">Filter by Color</span>
-        <ul class="colorbox">
-          <li><button class="red"></button></li>
-          <li><button class="orange"></button></li>
-          <li><button class="yellow"></button></li>
-          <li><button class="green"></button></li>
-          <li><button class="blue"></button></li>
-          <li><button class="purple"></button></li>
-          <li><button class="black"></button></li>
-          <li><button class="white"></button></li>
-        </ul>
+        <div>
+          <span>Price ($)</span>
+          <ul id="pricePoint">
+            <li><input type="radio" name="price" checked="checked" /><a href="#">Any Price</a></li>
+            <li><input type="radio" name="price" /><a href="#">Under $25</a></li>
+            <li><input type="radio" name="price" /><a href="#">$25 to $50</a></li>
+            <li><input type="radio" name="price" /><a href="#">$50 to $100</a></li>
+            <li><input type="radio" name="price" /><a href="#">Over $100</a></li>
+            <li><input type="radio" name="price" /><a href="#">Custom</a></li>
+          </ul>
+          <input type="text" name="low" placeholder="Low" class="low">
+          <span id="wordTo">to</span>
+          <input type="text" name="high" placeholder="High" class="high" ><i class="fa fa-caret-right" aria-hidden="true"></i>
+        </div>
         <hr>
-        <span>Ordering options</span>
-        <ul>
-          <li><input type="checkbox" name="giftCards"><a href="#">Accepts Etsy gift cards</a></li>
-          <li><input type="checkbox" name="giftCards"><a href="#">Customizable</a></li>
-        </ul>
+        <div>
+          <span>Filter by Color</span>
+          <ul class="colorBox">
+            <li><button class="red"></button></li>
+            <li><button class="orange"></button></li>
+            <li><button class="yellow"></button></li>
+            <li><button class="green"></button></li>
+            <li><button class="blue"></button></li>
+            <li><button class="purple"></button></li>
+            <li><button class="black"></button></li>
+            <li><button class="white"></button></li>
+          </ul>
+        </div>
+        <hr>
+        <div>
+          <span>Ordering options</span>
+          <ul>
+            <li><input type="checkbox" name="giftCards"><a href="#">Accepts Etsy gift cards</a></li>
+            <li><input type="checkbox" name="giftCards"><a href="#">Customizable</a></li>
+          </ul>
+        </div>
+        <hr>
+        <div>
+          <span>Ship to</span><br />
+          <select>
+            <option>Australia</option>
+            <option>Canada</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>Greece</option>
+            <option>Ireland</option>
+            <option>Italy</option>
+            <option>Japan</option>
+            <option>New Zealand</option>
+            <option>Portugal</option>
+            <option>Russia</option>
+            <option>Spain</option>
+            <option>The Netherlands</option>
+            <option>United Kingdom</option>
+            <option selected="selected">United States</option>
+          </select>
+        </div>
       </div>
     </div>
     <div class="imageDiv">
@@ -109,44 +140,83 @@
       <div class="imageOneSet">
         <ul>
           <li>
-            <img src="https://img0.etsystatic.com/178/0/14272093/il_340x270.1151854314_tdn0.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+            <img src="https://img0.etsystatic.com/178/0/14272093/il_340x270.1151854314_tdn0.jpg"><p>Home & Living<br/><a href="#">19,600 Items</a></p>
           </li>
           <li>
-            <img src="https://img0.etsystatic.com/120/0/11169772/il_340x270.1062591158_qru8.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+            <img src="https://img0.etsystatic.com/120/0/11169772/il_340x270.1062591158_qru8.jpg"><p>Arts & Collectibles<br /><a href="#">19,600 Items</a></p>
           </li>
           <li>
-            <img src="https://img0.etsystatic.com/105/1/12966850/il_340x270.968645768_no6n.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+            <img src="https://img0.etsystatic.com/105/1/12966850/il_340x270.968645768_no6n.jpg"><p>Weddings<br /><a href="#">19,600 Items</a></p>
           </li>
         <ul>
       </div>
       <div class="imageTwoSet">
         <ul>
           <li>
-            <img src="https://img1.etsystatic.com/138/0/11063629/il_340x270.1017615195_fx5s.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+            <img src="https://img1.etsystatic.com/138/0/11063629/il_340x270.1017615195_fx5s.jpg"><p>Clothing<br /><a href="#">2,991 Items</a></p>
           </li>
           <li>
-            <img src="https://img0.etsystatic.com/113/1/7104490/il_340x270.1019357464_tl4r.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+            <img src="https://img0.etsystatic.com/113/1/7104490/il_340x270.1019357464_tl4r.jpg"><p>Paper & Party Supplies<br /><a href="#">1,708 Items</a></p>
           </li>
           <li>
-            <img src="https://img1.etsystatic.com/046/2/9033961/il_340x270.665031811_9fwr.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+            <img src="https://img1.etsystatic.com/046/2/9033961/il_340x270.665031811_9fwr.jpg"><p>Jewelry<br /><a href="#">1,483 Items</a></p>
           </li>
           <li>
-            <img src="https://img1.etsystatic.com/135/0/8942013/il_340x270.1074593829_s6ak.jpg"><p>Home & Living</p><a href="#">19,600 Items</a>
+            <img src="https://img1.etsystatic.com/135/0/8942013/il_340x270.1074593829_s6ak.jpg"><p>Accessories<br /><a href="#">1,350 Items</a></p>
           </li>
         <ul>
       </div>
-      <hr>
-      <h4>All Categories > "whiskey" (39,871 Results)</h4>
+      <hr class="imgDivider">
+      <p class="contentStr"></p>
       <div class="dataImages"></div>
+      <div class="bottom">
+        <p>Related to whiskey</p>
+        <ul class="moreResults">
+          <li><a href="#">whiskey barrel</a></li>
+          <li><a href="#">bourbon</a></li>
+          <li><a href="#">beer</a></li>
+        </ul>
+        <ul class="moreResults">
+          <li><a href="#">whiskey decanter</a></li>
+          <li><a href="#">jack daniels</a></li>
+          <li><a href="#">boyfriend gift</a></li>
+        </ul>
+        <ul class="moreResults">
+          <li><a href="#">whiskey stones</a></li>
+          <li><a href="#">gifts for him</a></li>
+          <li><a href="#">flask</a></li>
+        </ul>
+        <p>Looking for shops? <a href="#">whiskeyhousewives</a>, <a href="#">whiskeyandweddingbells</a>, <a href="#">Whiskeyandbone</a>. <a href="#">See more</a>
+        <ul class="numbers">
+          <li><i class="fa fa-angle-left" aria-hidden="true"></i></li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>...</li>
+          <li>250</li>
+          <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+      <div class="sub">
+        <p>Get top trends and fresh editors' pick in your inbox with Etsy Finds.</p>
+        <input type="email" name="email" placeholder="Enter your email" class="email">
+        <input type="button" name="submit" value="Subscribe"class="emailSubmit">
+      </div>
     </div>
   </div>
-
-
+  <footer>
+    
+  </footer>
+<!-- 
   <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/items.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/main.js"></script> -->
 </body>
 </html>

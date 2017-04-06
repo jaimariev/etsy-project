@@ -33,7 +33,7 @@ $(document).ready(function(){
     var images = items.results.map(function(image){
       return {
         title: image.title.substring(0,31) + "...",
-        price: image.price + " " + image.currency_code,
+        price: image.price,
         shopname: image.Shop.shop_name,
         img: image.Images[0].url_170x135
       }
@@ -44,10 +44,15 @@ $(document).ready(function(){
             <li>
               <img src="${item.img}" />
               <p>${item.title}</p>
-              <p>${item.price}</p>
+              <span>${item.shopname}</span>
+              <span id="price">$${item.price}</span>
             </li>
         `
       })
+      var contentStr = ""
+        contentStr += `All Categories > "whiskey" (${items.count} Results)`
+      $(".contentStr").html(contentStr)
+
       $(".dataImages").html(content)
     })
 

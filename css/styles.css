@@ -1,6 +1,6 @@
 
 body {
-  font-family: sans-serif;
+  font-family: verdana;
 }
 
 a {
@@ -27,6 +27,10 @@ h2 {
   margin-right: 30px;
   color: #F56400;
   font-family: serif;
+}
+
+input {
+  outline: none;
 }
 
 .searchBar {
@@ -65,13 +69,13 @@ h2 {
 }
 
 .menu a {
-  margin-right: 20px;
+  margin-right: 15px;
   color: #0192B5;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .signIn {
-  width: 60px;
+  width: 65px;
   height: 30px;
   line-height: 10px;
   margin-right: 20px;
@@ -80,11 +84,11 @@ h2 {
   border-radius: 3px;
   background: white;
   color: #0192B5;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .signIn:hover {
-  background: #0192B5;
+  background: #F0FBFD;
 }
 
 .fa-shopping-cart {
@@ -109,7 +113,7 @@ nav {
   height: 50px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 25px;
+
 }
 
 .navBar {
@@ -134,10 +138,99 @@ nav {
   width: 100%;
   margin: auto;
   display: flex;
+  background: #FAF9F5;
+  padding-top: 25px;
 }
 
 .sideContainer {
   width: 20%;
+}
+
+hr {
+  width: 95%;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sideDiv {
+  width: 80%;
+  border: 1px solid #ccc;
+  background: white;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-left: 25px; 
+}
+
+.sideDiv a {
+  padding-left: 5px;
+}
+
+.sideDiv a:hover {
+  text-decoration: underline;
+}
+
+.sideDiv span {
+  margin: 0;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #353535;
+}
+
+.sideDiv ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.sideDiv li {
+  line-height: 25px;
+  font-size: 13px;
+}
+
+.fa-caret-right {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-left: 5px;
+  border-radius: 3px;
+  font-size: 20px;
+  padding-bottom: 3px;
+}
+
+.custom {
+  margin-left: 15px;
+  width: 120px;
+  height: 30px;
+  padding-left: 10px; 
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+#wordTo {
+  padding: 0;
+  margin: 0;
+}
+
+.low {
+  width: 40px;
+  height: 23px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 5px 10px;
+  margin-left: 30px;
+}
+
+.high {
+  width: 40px;
+  height: 23px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 5px 10px;
 }
 
 .imageDiv {
@@ -150,15 +243,35 @@ nav {
   justify-content: space-between;
 }
 
+.imageOneSet li {
+  height: 300px;
+}
+
 .imageOneSet img {
   width: 350px;
-  height: 260px;
+  height: 290px;
   border-radius: 5px;
 }
 
-.imageOneSet p{
-  position: absolute;
+.imageOneSet p {
+  position: relative;
+  bottom: 100px;
+  left: 88px;
+  border-radius: 5px;
+  background: white;
+  width: 175px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 5px;
+}
 
+.imageOneSet a {
+  font-size: 12px;
+}
+
+.imageTwoSet {
+  height: 225px;
 }
 
 .imageTwoSet ul {
@@ -173,6 +286,28 @@ nav {
   border-radius: 5px;
 }
 
+.imageTwoSet p {
+  position: relative;
+  bottom: 100px;
+  left: 25px;
+  border-radius: 5px;
+  background: white;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.imageTwoSet a {
+  font-size: 12px;
+}
+
+.imgDivider {
+  width: 97%;
+  margin: 0;
+}
+
 .dataImages {
   width: 97%;
 }
@@ -180,14 +315,17 @@ nav {
 .images {
   padding: 0;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .images li {
+  height: auto;
+  background: white;
   border-radius: 3px;
   border: 1px solid #ccc;
   margin-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .images img {
@@ -196,5 +334,180 @@ nav {
 }
 
 .images p {
-  font-size: 10px;
+  margin: 0;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.images span {
+  font-size: 12px;
+  color: #ccc;
+  padding-left: 5px;
+}
+
+#price {
+  position: relative;
+  color: #78C042;
+  float: right;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+.colorBox {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+
+}
+
+.colorBox li {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.contentStr {
+  font-size: 13px;
+}
+
+select {
+  width: 200px;
+  height: 35px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  background: white;
+  font-size: 13px;
+}
+
+.red {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: red;
+}
+
+.orange {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: orange;
+}
+
+.yellow {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: yellow;
+}
+
+.green {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: green;
+}
+
+.blue {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: blue;
+}
+
+.purple {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: purple;
+}
+
+.black {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: black;
+}
+
+.white {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.bottom {
+  font-size: 14px;
+}
+
+.moreResults {
+  width: 55%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.moreResults a:hover {
+  text-decoration: underline;
+}
+
+.numbers {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.numbers li {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  line-height: 30px;
+  background: white;
+}
+
+.numbers li:first-child {
+  border-left: 1px solid #ccc;
+}
+
+.numbers li:nth-child(11) {
+  width: 40px;
+}
+
+.sub {
+  width: 50%;
+  margin: auto;
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+
+.email {
+  width: 320px;
+  height: 35px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.emailSubmit {
+  width: 80px;
+  height: 39px;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  position: relative;
+  right: 10px;
+  color: white;
+  background: #3CB1CB;
 }
